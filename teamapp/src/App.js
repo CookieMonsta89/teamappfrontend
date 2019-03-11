@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import firebase, { auth, provider } from "./firebase";
-import Navigation from './componenets/individualComponents/navigation'
+import Navigation from './componenets/individualComponents/Navigation'
 import HomeView from './componenets/containerViews/HomeView'
 class App extends Component {
 

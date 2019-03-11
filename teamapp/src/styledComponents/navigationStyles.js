@@ -3,10 +3,9 @@ import styled, {css} from 'styled-components'
 export const Nav = styled.div`
     background:rgb(51, 51, 51);
     color:white;
-    height:50px;
+    height:55px;
     display:flex;
     justify-content:center;
-    padding:3px 0;
 `;
 
 export const NavDiv = styled.div`

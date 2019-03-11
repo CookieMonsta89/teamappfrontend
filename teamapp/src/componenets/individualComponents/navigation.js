@@ -6,7 +6,7 @@ import {
     Logo,
     NavList,
     ATag
-} from '../../styledComponents/navigationStyles';
+} from '../../styledComponents/NavigationStyles';
 
 class Navigation extends Component {
     state = { 
@@ -19,7 +19,7 @@ class Navigation extends Component {
         for (let i = 0; i < tabsArr.length; i++) {
             tabsArr[i].removeAttribute('style');
         }
-        tabsArr[e.target.name].setAttribute('style', "color:white; border-bottom:2px solid white");
+        tabsArr[e.target.name].setAttribute('style', "color:white; background:#520A0D");
      }
 
 
@@ -29,7 +29,7 @@ class Navigation extends Component {
                 <NavDiv>
                     <Logo src={logo} alt='Logo' />
                     <NavList>
-                        <ATag href='' onClick={this.activeLink} className='tab' name='0' style={{color:'white', borderBottom:'1px solid white'}}>Home</ATag>
+                        <ATag href='' onClick={this.activeLink} className='tab' name='0' style={{color:'white', background:'#520A0D'}}>Home</ATag>
                         <ATag href='' onClick={this.activeLink} className='tab' name='1'>News</ATag>
                         <ATag href='' onClick={this.activeLink} className='tab' name='2'>Games</ATag>
                         <ATag href='' onClick={this.activeLink} className='tab' name='3'>Team</ATag>

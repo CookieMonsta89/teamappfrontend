@@ -1,4 +1,11 @@
 import React, {Component} from 'react'
+import JumboTron from '../individualComponents/Jumbotron';
+import LandingNews from '../individualComponents/LandPageNews';
+import LandingSchedule from '../individualComponents/LandPageSchedule';
+import LandingTeam from '../individualComponents/LandingTeam';
+import {
+    HomeViewContainer,
+} from '../../styledComponents/HomeViewStyle';
 
 class HomeView extends Component {
     constructor(props) {
@@ -7,9 +14,12 @@ class HomeView extends Component {
     }
     render() { 
         return ( 
-            <div>
-                HomeView
-            </div>
+            <HomeViewContainer>
+                <JumboTron />
+                <LandingNews />
+                <LandingSchedule />
+                <LandingTeam />
+            </HomeViewContainer>
          );
     }
 }
